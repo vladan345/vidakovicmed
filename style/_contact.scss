@@ -1,0 +1,27 @@
+section.contact-section {
+  max-width: 89rem;
+  margin: 10rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  div {
+    width: 42rem;
+  }
+}
+.contact-image {
+  display: block;
+  margin-left: 5rem;
+  height: 42rem;
+}
+.info ul li {
+  @include flex(flex-start, center, row);
+  margin-bottom: 2rem;
+  img {
+    margin-left: 0;
+    margin-right: 2rem;
+    height: 3.5rem;
+  }
+  p {
+    margin: 0;
+  }
+}

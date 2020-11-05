@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background: rgb(250, 250, 250);
+  color: #262626;
+}
+
+h1 {
+  font-size: $header1;
+  font-family: "Lemon Milk";
+}
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: $text;
+}
+
+h2 {
+  font-size: $header2;
+  font-family: "Lemon Milk";
+}
+h3 {
+  font-size: $header3;
+  font-family: "Lemon Milk";
+  color: $main-orange;
+  border-bottom: 2px solid $main-orange;
+  padding-bottom: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+h4,
+h5 {
+  font-size: $header4;
+}
+p {
+  text-align: justify;
+  margin-bottom: 3rem;
+}
+ul {
+  list-style: none;
+}
+.button {
+  color: $main-orange;
+  border: 2px solid $main-orange;
+  text-decoration: none;
+  padding: 1rem 2.5rem;
+  border-radius: 5rem;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: $main-orange;
+  color: white;
+}
+.white {
+  color: white;
+  border-color: white;
+}
+.white:hover {
+  color: $main-orange;
+  background-color: white;
+}
+header {
+  #logo img {
+    height: 7.5rem;
+  }
+  z-index: 10000;
+  background-color: white;
+  width: 100%;
+  padding: 0 10%;
+  height: 12vh;
+  position: fixed;
+  @include flex(space-between, center, row);
+  nav ul li {
+    display: inline-block;
+    margin: 0 1.5rem;
+  }
+  .ham-menu {
+    height: 3rem;
+    display: none;
+  }
+}
+.ham-nav {
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  background: white;
+  width: 100%;
+  height: 8rem;
+  position: fixed;
+  top: 0;
+  ul li {
+    display: inline-block;
+    margin: 0 1.5rem;
+  }
+}
+.active {
+  top: 12vh;
+}
+.hero-heading {
+  z-index: -2;
+  width: 100%;
+  padding-top: 12vh;
+}
+main {
+  z-index: 0;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+footer {
+  background: $main-orange;
+  width: 100%;
+  height: 12rem;
+}
+.footer-wrap {
+  height: 100%;
+  @include flex(space-between, center, row);
+  max-width: 89rem;
+  margin: 0 auto;
+  p {
+    color: white;
+    margin-bottom: 0;
+  }
+
+  ul li {
+    display: inline-block;
+    margin-left: 1.5rem;
+  }
+  ul li a img {
+    transition: opacity 0.3s ease;
+    height: 3.5rem;
+  }
+  ul li a:hover img {
+    opacity: 0.8;
+  }
+}

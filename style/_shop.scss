@@ -1,3 +1,6 @@
+.shop-main {
+  margin: 5rem 0;
+}
 .shop-row {
   margin-bottom: 5rem;
 }
@@ -28,37 +31,4 @@ section.last-section {
 }
 .value-name {
   margin: 5rem 0;
-}
-button {
-  color: $main-orange;
-  background: transparent;
-  border: none;
-  padding: 1rem 2rem;
-  transition: all 0.3s ease;
-}
-button:hover {
-  background: $main-orange;
-  cursor: pointer;
-  color: white;
-}
-.button-active {
-  color: white;
-  background: $main-orange;
-}
-button:nth-of-type(1) {
-  border: solid 2px $main-orange;
-  border-right: 0;
-  border-top-left-radius: 5rem;
-  border-bottom-left-radius: 5rem;
-  margin-right: -2px;
-}
-button:nth-of-type(2) {
-  border: solid 2px $main-orange;
-}
-button:nth-of-type(3) {
-  border: solid 2px $main-orange;
-  border-left: 0;
-  border-top-right-radius: 5rem;
-  border-bottom-right-radius: 5rem;
-  margin-left: -2px;
 }

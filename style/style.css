@@ -363,10 +363,6 @@ section.contact-section div {
   margin: 0;
 }
 
-.shop-main {
-  margin: 5rem 0;
-}
-
 .shop-row {
   margin-bottom: 5rem;
 }
@@ -406,6 +402,46 @@ section.last-section div {
 
 .value-name {
   margin: 5rem 0;
+}
+
+button {
+  color: #f79721;
+  background: transparent;
+  border: none;
+  padding: 1rem 2rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #f79721;
+  cursor: pointer;
+  color: white;
+}
+
+.button-active {
+  color: white;
+  background: #f79721;
+}
+
+button:nth-of-type(1) {
+  border: solid 2px #f79721;
+  border-right: 0;
+  border-top-left-radius: 5rem;
+  border-bottom-left-radius: 5rem;
+  margin-right: -2px;
+}
+
+button:nth-of-type(2) {
+  border: solid 2px #f79721;
+}
+
+button:nth-of-type(3) {
+  border: solid 2px #f79721;
+  border-left: 0;
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+  margin-left: -2px;
 }
 
 @media only screen and (max-width: 950px) {
